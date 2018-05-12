@@ -1,0 +1,19 @@
+{
+    "name": "chocochaos/propel-rulable-behavior",
+    "license": "MIT",
+    "description": "Allows defining buisiness rules in centralised classes and adding them to your models and query classes.",
+    "type": "propel-behavior",
+    "extra": {
+        "name": "rulable",
+        "class": "\\Chocochaos\\Rulable\\RulableBehavior"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chocochaos\\Rulable\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "propel/propel": "@dev"
+    }
+}
