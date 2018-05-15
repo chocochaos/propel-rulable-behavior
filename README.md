@@ -1,10 +1,10 @@
 # Rulable behavior for Propel 2
 
-When writing real-world applications, you often have to deal with complex buisiness rules. Maintaining these rules can be tedious and prone to errors, especially if they have to be checked in multiple places. It is easy to miss one implementation of a rule while making changes,
+When writing real-world applications, you often have to deal with complex business rules. Maintaining these rules can be tedious and prone to errors, especially if they have to be checked in multiple places. It is easy to miss one implementation of a rule while making changes.
 
 In propel you can already add your own methods to query and object classes. Even then, you are still defining the same logic in multiple places: in the query classes to filter your query results based on a rule, and in the models themselves, to check if a specific object meets a certain rule.
 
-This behavior allows you to define buisiness rules in centralised classes. Both your query filters and your model checks can be defined in one place. Upon building the schemas, convenient methods for checking these rules are added to the query and model classes, resulting in cleaning and more easily maintainable code.
+This behavior allows you to define business rules in centralised classes. Both your query filters and your model checks can be defined in one place. Upon building the schemas, convenient methods for checking these rules are added to the query and model classes, resulting in cleaner and more easily maintainable code.
 
 ## Installation
 
@@ -176,7 +176,7 @@ class UserGroupFunctionIsActive implements RuleInterface
 ```
 
 As you can see, there are three methods you need to implement:
-* `objectMeetsRule`: checks wether an object meets the rule.
+* `objectMeetsRule`: checks whether an object meets the rule.
 * `filterByMeetsRule`: apply filters to a query to only find items which meet the rule.
 * `filterByFailsRule`: apply filters to a query to only find items which do not meet the rule.
 
